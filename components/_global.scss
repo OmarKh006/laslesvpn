@@ -1,0 +1,4 @@
+.container {
+  width: calc(var(--max-width) + (var(--gutter) * 2));
+  padding: 1.6rem 0;
+}
