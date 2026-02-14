@@ -13,12 +13,14 @@
   --font-weight-500: 500;
   --font-weight-700: 700;
   --color-primary: #f53838;
+  --color-white: #ffffff;
   --color-text-primary: #0b132a;
   --color-text-secondary: #4f5665;
   --border-radius-50: 5rem;
   --border-radius-10: 1rem;
   --border-1: 0.1rem;
   --border-2: 0.2rem;
+  --transition-timing: 0.3s;
 }
 
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
@@ -146,7 +148,36 @@ meter {
 
 .container {
   width: calc(var(--max-width) + var(--gutter) * 2);
-  padding: 1.6rem 0;
+  padding: 5rem 0;
+}
+
+.btn {
+  padding: 1.75rem 7.75rem;
+  text-align: center;
+  font-weight: var(--font-weight-700);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius-10);
+}
+
+.btn--plain {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
+}
+
+.btn--secondary {
+  padding: 1.3rem 4.5rem;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
+  border: var(--border-1) solid var(--color-primary);
+  border-radius: var(--border-radius-50);
+  transition: all var(--transition-timing);
+}
+.btn--secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .header {
@@ -159,6 +190,15 @@ meter {
 .navigation__links-list {
   display: flex;
   gap: 4rem;
+}
+.navigation__links-list__link {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-400);
+  transition: color var(--transition-timing) ease-in-out;
+}
+.navigation__links-list__link:hover {
+  color: var(--color-primary);
 }
 
 .header__cta {
