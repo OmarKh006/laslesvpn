@@ -1,6 +1,7 @@
 .container {
   width: var(--max-width);
   padding: 5rem 0;
+  z-index: 0;
 }
 
 .btn {
@@ -37,4 +38,11 @@
 .span {
   font-weight: var(--font-weight-500);
   font-size: var(--font-size-16);
+}
+
+.h3--header {
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-25);
+  line-height: var(--line-height-30);
+  color: var(--color-text-primary);
 }

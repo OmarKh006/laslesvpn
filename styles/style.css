@@ -18,6 +18,7 @@
   --color-white: #ffffff;
   --color-text-primary: #0b132a;
   --color-text-secondary: #4f5665;
+  --border-color: #eeeff2;
   --border-radius-50: 5rem;
   --border-radius-10: 1rem;
   --border-1: 0.1rem;
@@ -151,6 +152,7 @@ meter {
 .container {
   width: var(--max-width);
   padding: 5rem 0;
+  z-index: 0;
 }
 
 .btn {
@@ -186,6 +188,13 @@ meter {
 .span {
   font-weight: var(--font-weight-500);
   font-size: var(--font-size-16);
+}
+
+.h3--header {
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-25);
+  line-height: var(--line-height-30);
+  color: var(--color-text-primary);
 }
 
 .header {
@@ -242,4 +251,35 @@ meter {
   color: var(--color-text-secondary);
   margin-top: 2rem;
   margin-bottom: 5rem;
+}
+
+.features {
+  margin-top: 10.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3.721rem 0;
+}
+.features__feature {
+  display: flex;
+  align-items: center;
+  gap: 3.65rem;
+}
+.features__feature:nth-child(2) {
+  padding-left: 11.3rem;
+  padding-right: 13.45rem;
+  border-left: var(--border-2) solid green;
+  border-right: var(--border-2) solid green;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.stats__span {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-20);
+  line-height: var(--line-height-30);
+  color: var(--color-text-secondary);
 }/*# sourceMappingURL=style.css.map */
