@@ -1,6 +1,5 @@
 :root {
   --max-width: 114rem;
-  --gutter: 0.8rem;
   --font-family: "Rubik", sans-serif;
   --font-size-14: 1.4rem;
   --font-size-16: 1.6rem;
@@ -20,7 +19,7 @@
   --border-radius-10: 1rem;
   --border-1: 0.1rem;
   --border-2: 0.2rem;
-  --transition-timing: 0.3s;
+  --transition-timing: 0.2s;
 }
 
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
@@ -147,7 +146,7 @@ meter {
 }
 
 .container {
-  width: calc(var(--max-width) + var(--gutter) * 2);
+  width: var(--max-width);
   padding: 5rem 0;
 }
 
@@ -178,6 +177,11 @@ meter {
 .btn--secondary:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header {

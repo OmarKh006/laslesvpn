@@ -1,5 +1,5 @@
 .container {
-  width: calc(var(--max-width) + (var(--gutter) * 2));
+  width: var(--max-width);
   padding: 5rem 0;
 }
 
@@ -31,4 +31,9 @@
     background-color: var(--color-primary);
     color: var(--color-white);
   }
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
 }
