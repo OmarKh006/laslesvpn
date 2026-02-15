@@ -11,6 +11,9 @@
   --font-weight-400: 400;
   --font-weight-500: 500;
   --font-weight-700: 700;
+  --line-height-70: 7rem;
+  --line-height-50: 5rem;
+  --line-height-30: 3rem;
   --color-primary: #f53838;
   --color-white: #ffffff;
   --color-text-primary: #0b132a;
@@ -157,6 +160,7 @@ meter {
   color: var(--color-white);
   background-color: var(--color-primary);
   border-radius: var(--border-radius-10);
+  align-self: flex-start;
 }
 
 .btn--plain {
@@ -179,9 +183,9 @@ meter {
   color: var(--color-white);
 }
 
-.section {
-  display: flex;
-  justify-content: space-between;
+.span {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
 }
 
 .header {
@@ -208,4 +212,34 @@ meter {
 .header__cta {
   display: flex;
   gap: 3rem;
+}
+
+.about-us {
+  margin-top: 8.849rem;
+  display: flex;
+  justify-content: space-between;
+}
+.about-us__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description__header {
+  font-size: var(--font-size-50);
+  font-weight: var(--font-weight-500);
+  line-height: var(--line-height-70);
+  color: var(--color-text-primary);
+}
+.description__header__span {
+  font-weight: var(--font-weight-700);
+}
+
+.description__text {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-30);
+  color: var(--color-text-secondary);
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }/*# sourceMappingURL=style.css.map */

@@ -10,6 +10,7 @@
   color: var(--color-white);
   background-color: var(--color-primary);
   border-radius: var(--border-radius-10);
+  align-self: flex-start;
 }
 
 .btn--plain {
@@ -33,7 +34,7 @@
   }
 }
 
-.section {
-  display: flex;
-  justify-content: space-between;
+.span {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
 }
