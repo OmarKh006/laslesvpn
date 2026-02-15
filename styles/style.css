@@ -44,6 +44,7 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   font-size: 62.5%;
+  scroll-padding-top: 12rem;
   scroll-behavior: smooth;
 }
 
@@ -257,8 +258,8 @@ meter {
   margin-top: 10.3rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 3.721rem 0;
+  justify-content: space-between;
+  padding: 3.721rem 9.1rem;
 }
 .features__feature {
   display: flex;
@@ -266,10 +267,9 @@ meter {
   gap: 3.65rem;
 }
 .features__feature:nth-child(2) {
-  padding-left: 11.3rem;
-  padding-right: 13.45rem;
-  border-left: var(--border-2) solid green;
-  border-right: var(--border-2) solid green;
+  padding: 3.029rem 13.45rem 3.029rem 11.3rem;
+  border-left: var(--border-2) solid var(--border-color);
+  border-right: var(--border-2) solid var(--border-color);
 }
 
 .stats {
