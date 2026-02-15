@@ -14,11 +14,14 @@
   --line-height-70: 7rem;
   --line-height-50: 5rem;
   --line-height-30: 3rem;
+  --line-height-25: 2.5rem;
   --color-primary: #f53838;
   --color-white: #ffffff;
   --color-text-primary: #0b132a;
   --color-text-secondary: #4f5665;
   --border-color: #eeeff2;
+  --btn-blur-color: #f5383859;
+  --container-blur-color: #0d1025;
   --border-radius-50: 5rem;
   --border-radius-10: 1rem;
   --border-1: 0.1rem;
@@ -151,19 +154,36 @@ meter {
 }
 
 .container {
+  position: relative;
   width: var(--max-width);
   padding: 5rem 0;
   z-index: 0;
 }
 
-.btn {
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
   padding: 1.75rem 7.75rem;
   text-align: center;
   font-weight: var(--font-weight-700);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-25);
   color: var(--color-white);
   background-color: var(--color-primary);
   border-radius: var(--border-radius-10);
   align-self: flex-start;
+}
+.button::after {
+  position: absolute;
+  content: "";
+  width: 21.183rem;
+  height: 6rem;
+  border-radius: var(--border-radius-10);
+  top: 2.529rem;
+  background-color: var(--btn-blur-color);
+  filter: blur(5.4rem);
+  z-index: -1;
 }
 
 .btn--plain {
@@ -255,6 +275,7 @@ meter {
 }
 
 .features {
+  position: relative;
   margin-top: 10.3rem;
   display: flex;
   align-items: center;
@@ -270,6 +291,20 @@ meter {
   padding: 3.029rem 13.45rem 3.029rem 11.3rem;
   border-left: var(--border-2) solid var(--border-color);
   border-right: var(--border-2) solid var(--border-color);
+}
+.features::before {
+  content: "";
+  position: absolute;
+  width: 106.884rem;
+  height: 18.922rem;
+  border-radius: var(--border-radius-10);
+  opacity: 0.06;
+  top: 5.28rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--container-blur-color);
+  filter: blur(11.4rem);
+  z-index: -1;
 }
 
 .stats {

@@ -1,17 +1,35 @@
 .container {
+  position: relative;
   width: var(--max-width);
   padding: 5rem 0;
   z-index: 0;
 }
 
-.btn {
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
   padding: 1.75rem 7.75rem;
   text-align: center;
   font-weight: var(--font-weight-700);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-25);
   color: var(--color-white);
   background-color: var(--color-primary);
   border-radius: var(--border-radius-10);
   align-self: flex-start;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 21.183rem;
+    height: 6rem;
+    border-radius: var(--border-radius-10);
+    top: 2.529rem;
+    background-color: var(--btn-blur-color);
+    filter: blur(5.4rem);
+    z-index: -1;
+  }
 }
 
 .btn--plain {
