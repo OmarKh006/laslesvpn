@@ -1,0 +1,29 @@
+.features {
+  margin-top: 9.583rem;
+  display: flex;
+  gap: 16.948rem;
+
+  &__details {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.details__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  // list-style-image: url(../assets/list-icon.svg);
+}
+
+.list__item {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-14);
+  line-height: var(--line-height-30);
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 1.008rem;
+}

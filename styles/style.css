@@ -206,6 +206,13 @@ meter {
   color: var(--color-white);
 }
 
+.text {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-30);
+  color: var(--color-text-secondary);
+}
+
 .span {
   font-weight: var(--font-weight-500);
   font-size: var(--font-size-16);
@@ -215,6 +222,13 @@ meter {
   font-weight: var(--font-weight-700);
   font-size: var(--font-size-25);
   line-height: var(--line-height-30);
+  color: var(--color-text-primary);
+}
+
+.h2--header {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-35);
+  line-height: var(--line-height-50);
   color: var(--color-text-primary);
 }
 
@@ -266,10 +280,6 @@ meter {
 }
 
 .description__text {
-  font-weight: var(--font-weight-400);
-  font-size: var(--font-size-16);
-  line-height: var(--line-height-30);
-  color: var(--color-text-secondary);
   margin-top: 2rem;
   margin-bottom: 5rem;
 }
@@ -317,4 +327,32 @@ meter {
   font-size: var(--font-size-20);
   line-height: var(--line-height-30);
   color: var(--color-text-secondary);
+}
+
+.features {
+  margin-top: 9.583rem;
+  display: flex;
+  gap: 16.948rem;
+}
+.features__details {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.details__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.list__item {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-14);
+  line-height: var(--line-height-30);
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 1.008rem;
 }/*# sourceMappingURL=style.css.map */
