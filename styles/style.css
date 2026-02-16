@@ -247,12 +247,12 @@ meter {
 .about-us {
   margin-top: 8.849rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
-.about-us__description {
+.about-us__upper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .description__header {
@@ -274,7 +274,7 @@ meter {
   margin-bottom: 5rem;
 }
 
-.features {
+.numbers {
   position: relative;
   margin-top: 10.3rem;
   display: flex;
@@ -282,17 +282,17 @@ meter {
   justify-content: space-between;
   padding: 3.721rem 9.1rem;
 }
-.features__feature {
+.numbers__number {
   display: flex;
   align-items: center;
   gap: 3.65rem;
 }
-.features__feature:nth-child(2) {
+.numbers__number:nth-child(2) {
   padding: 3.029rem 13.45rem 3.029rem 11.3rem;
   border-left: var(--border-2) solid var(--border-color);
   border-right: var(--border-2) solid var(--border-color);
 }
-.features::before {
+.numbers::before {
   content: "";
   position: absolute;
   width: 106.884rem;

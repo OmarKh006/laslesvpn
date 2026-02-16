@@ -1,12 +1,12 @@
 .about-us {
   margin-top: 8.849rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 
-  &__description {
+  &__upper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
@@ -28,4 +28,53 @@
   color: var(--color-text-secondary);
   margin-top: 2rem;
   margin-bottom: 5rem;
+}
+
+.numbers {
+  position: relative;
+  margin-top: 10.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.721rem 9.1rem;
+
+  &__number {
+    display: flex;
+    align-items: center;
+    gap: 3.65rem;
+
+    &:nth-child(2) {
+      padding: 3.029rem 13.45rem 3.029rem 11.3rem;
+      border-left: var(--border-2) solid var(--border-color);
+      border-right: var(--border-2) solid var(--border-color);
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 106.884rem;
+    height: 18.922rem;
+    border-radius: var(--border-radius-10);
+    opacity: 0.06;
+    top: 5.28rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--container-blur-color);
+    filter: blur(11.4rem);
+    z-index: -1;
+  }
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &__span {
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-20);
+    line-height: var(--line-height-30);
+    color: var(--color-text-secondary);
+  }
 }
