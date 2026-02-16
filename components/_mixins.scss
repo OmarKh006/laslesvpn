@@ -1,0 +1,34 @@
+@mixin list_item($gap) {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-14);
+  line-height: var(--line-height-30);
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin list($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+@mixin button(
+  $tbP,
+  $rlP,
+  $font-weight,
+  $font-size,
+  $color,
+  $bg-color,
+  $border: none,
+  $border-radius
+) {
+  padding: $tbP $rlP;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
+  background-color: $bg-color;
+  border: $border;
+  border-radius: $border-radius;
+}

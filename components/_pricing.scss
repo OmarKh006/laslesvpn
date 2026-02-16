@@ -1,0 +1,126 @@
+@import "./mixins";
+
+.pricing {
+  margin-top: 20.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+
+  &__heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.pricing__offers {
+  display: flex;
+  gap: 5rem;
+}
+
+.offer {
+  height: 76rem;
+  padding: 7.963rem 6.987rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: var(--border-radius-10);
+  border: var(--border-2) solid var(--border-color-secondary);
+
+  &__plan {
+    display: grid;
+    row-gap: 3rem;
+  }
+
+  &__price {
+    margin-top: auto;
+    display: grid;
+    row-gap: 2rem;
+  }
+
+  &:nth-child(3) {
+    border: var(--border-2) solid var(--color-primary);
+  }
+}
+
+.plan__type {
+  display: inline-block;
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-18);
+  color: var(--color-text-primary);
+}
+
+.features__list {
+  @include list($gap: 1rem);
+  margin-top: 3rem;
+}
+
+.feature {
+  @include list_item($gap: 2.026rem);
+}
+
+.price {
+  display: inline-block;
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-25);
+  color: var(--color-text-primary);
+
+  &__span {
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-400);
+  }
+}
+
+.price__btn--standard {
+  @include button(
+    $tbP: 1.3rem,
+    $rlP: 6.249rem,
+    $font-weight: var(--font-weight-700),
+    $font-size: var(--font-size-16),
+    $color: var(--color-primary),
+    $bg-color: var(--color-white),
+    $border: var(--border-2) solid var(--color-primary),
+    $border-radius: var(--border-radius-50)
+  );
+  transition: var(--transition-timing);
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+}
+
+.price__btn--premium {
+  position: relative;
+  @include button(
+    $tbP: 1.3rem,
+    $rlP: 6.249rem,
+    $font-weight: var(--font-weight-700),
+    $font-size: var(--font-size-16),
+    $color: var(--color-white),
+    $bg-color: var(--color-primary),
+    $border: var(--border-2) solid var(--color-primary),
+    $border-radius: var(--border-radius-50)
+  );
+  transition: var(--transition-timing);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 12.738rem;
+    height: 4.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.7rem;
+    border-radius: var(--border-radius-60);
+    background-color: var(--btn-blur-color);
+    filter: blur(54px);
+    z-index: -1;
+  }
+}
