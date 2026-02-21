@@ -7,7 +7,12 @@
   &__upper {
     display: flex;
     justify-content: space-between;
+    gap: 4.076rem;
   }
+}
+
+.about-us__description {
+  width: 55.5rem;
 }
 
 .description__header {

@@ -271,6 +271,11 @@ meter {
 .about-us__upper {
   display: flex;
   justify-content: space-between;
+  gap: 4.076rem;
+}
+
+.about-us__description {
+  width: 55.5rem;
 }
 
 .description__header {
@@ -337,6 +342,10 @@ meter {
   margin-top: 9.583rem;
   display: flex;
   gap: 16.948rem;
+}
+.features__pic {
+  max-width: 50.812rem;
+  width: 100%;
 }
 .features__details {
   align-self: flex-end;

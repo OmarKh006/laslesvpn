@@ -5,6 +5,11 @@
   display: flex;
   gap: 16.948rem;
 
+  &__pic {
+    max-width: 50.812rem;
+    width: 100%;
+  }
+
   &__details {
     align-self: flex-end;
     @include list($gap: 2rem);
