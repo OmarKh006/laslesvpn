@@ -1,0 +1,23 @@
+.network {
+  margin-top: 15rem;
+
+  &__heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__global {
+    margin-top: 15.581rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__sponsors {
+    margin-top: 3.581rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

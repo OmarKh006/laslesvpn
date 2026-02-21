@@ -487,4 +487,25 @@ meter {
   background-color: var(--btn-blur-color);
   filter: blur(54px);
   z-index: -1;
+}
+
+.network {
+  margin-top: 15rem;
+}
+.network__heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.network__global {
+  margin-top: 15.581rem;
+  display: flex;
+  justify-content: center;
+}
+.network__sponsors {
+  margin-top: 3.581rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
