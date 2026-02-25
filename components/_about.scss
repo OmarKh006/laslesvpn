@@ -38,6 +38,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 3.721rem 9.1rem;
+  border-radius: var(--border-radius-10);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
   &__number {
     display: flex;
@@ -49,21 +51,6 @@
       border-left: var(--border-2) solid var(--border-color);
       border-right: var(--border-2) solid var(--border-color);
     }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 106.884rem;
-    height: 18.922rem;
-    border-radius: var(--border-radius-10);
-    opacity: 0.06;
-    top: 5.28rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--container-blur-color);
-    filter: blur(11.4rem);
-    z-index: -1;
   }
 }
 

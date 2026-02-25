@@ -22,7 +22,8 @@
   $color,
   $bg-color,
   $border: none,
-  $border-radius
+  $border-radius,
+  $box-shadow: none
 ) {
   padding: $tbP $rlP;
   font-weight: $font-weight;
@@ -31,4 +32,5 @@
   background-color: $bg-color;
   border: $border;
   border-radius: $border-radius;
+  box-shadow: $box-shadow;
 }

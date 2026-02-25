@@ -15,25 +15,14 @@
     $font-size: var(--font-size-16),
     $color: var(--color-white),
     $bg-color: var(--color-primary),
-    $border-radius: var(--border-radius-10)
+    $border-radius: var(--border-radius-10),
+    $box-shadow: 0 12px 24px rgba(235, 50, 50, 0.5)
   );
   position: relative;
   display: flex;
   justify-content: center;
   text-align: center;
   align-self: flex-start;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 21.183rem;
-    height: 6rem;
-    border-radius: var(--border-radius-10);
-    top: 2.529rem;
-    background-color: var(--btn-blur-color);
-    filter: blur(5.4rem);
-    z-index: -1;
-  }
 }
 
 .btn--plain {
