@@ -8,17 +8,6 @@
 .navigation__links-list {
   display: flex;
   gap: 4rem;
-
-  &__link {
-    color: var(--color-text-secondary);
-    font-size: var(--font-size-16);
-    font-weight: var(--font-weight-400);
-    transition: color var(--transition-timing) ease-in-out;
-
-    &:hover {
-      color: var(--color-primary);
-    }
-  }
 }
 
 .header__cta {

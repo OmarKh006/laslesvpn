@@ -13,6 +13,7 @@
   --font-weight-700: 700;
   --line-height-70: 7rem;
   --line-height-50: 5rem;
+  --line-height-45: 4.5rem;
   --line-height-30: 3rem;
   --line-height-25: 2.5rem;
   --color-primary: #f53838;
@@ -20,8 +21,10 @@
   --color-gray: #fbfbfb;
   --color-text-primary: #0b132a;
   --color-text-secondary: #4f5665;
+  --color-text-copy: #afb5c0;
   --border-color: #eeeff2;
   --border-color-secondary: #dddddd;
+  --color-footer: #f8f8f8;
   --btn-blur-color: #f5383859;
   --container-blur-color: #0d1025;
   --border-radius-60: 6rem;
@@ -52,6 +55,7 @@ html {
   font-size: 62.5%;
   scroll-padding-top: 12rem;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -159,8 +163,18 @@ meter {
 .container {
   position: relative;
   width: var(--max-width);
-  padding: 5rem 0;
+  padding-top: 5rem;
   z-index: 0;
+}
+
+.item__link {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-400);
+  transition: color var(--transition-timing) ease-in-out;
+}
+.item__link:hover {
+  color: var(--color-primary);
 }
 
 .button {
@@ -213,6 +227,12 @@ meter {
   font-size: var(--font-size-16);
 }
 
+.h4--header {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-18);
+  color: var(--color-text-primary);
+}
+
 .h3--header {
   font-weight: var(--font-weight-700);
   font-size: var(--font-size-25);
@@ -227,6 +247,16 @@ meter {
   color: var(--color-text-primary);
 }
 
+.main__header {
+  font-size: var(--font-size-50);
+  font-weight: var(--font-weight-500);
+  line-height: var(--line-height-70);
+  color: var(--color-text-primary);
+}
+.main__header__span {
+  font-weight: var(--font-weight-700);
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -237,15 +267,6 @@ meter {
 .navigation__links-list {
   display: flex;
   gap: 4rem;
-}
-.navigation__links-list__link {
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-16);
-  font-weight: var(--font-weight-400);
-  transition: color var(--transition-timing) ease-in-out;
-}
-.navigation__links-list__link:hover {
-  color: var(--color-primary);
 }
 
 .header__cta {
@@ -267,16 +288,6 @@ meter {
 
 .about-us__description {
   width: 55.5rem;
-}
-
-.description__header {
-  font-size: var(--font-size-50);
-  font-weight: var(--font-weight-500);
-  line-height: var(--line-height-70);
-  color: var(--color-text-primary);
-}
-.description__header__span {
-  font-weight: var(--font-weight-700);
 }
 
 .description__text {
@@ -555,16 +566,9 @@ meter {
   gap: 0.5rem;
 }
 
-.name {
-  font-weight: var(--font-weight-500);
-  font-size: var(--font-size-18);
-  color: var(--color-text-primary);
-}
-
 .location {
-  font-weight: var(--font-weight-400);
   font-size: var(--font-size-14);
-  color: var(--color-text-secondary);
+  line-height: normal;
 }
 
 .rating {
@@ -608,4 +612,90 @@ meter {
 }
 .dots__dot:nth-child(1) circle {
   fill: var(--color-primary);
+}
+
+.footer {
+  margin-top: 18.152rem;
+  position: relative;
+  color: var(--color-white);
+  padding: 18rem 0 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__subscribe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  padding: 5.85rem 7rem;
+  border-radius: var(--border-radius-10);
+  transform: translateX(-50%) translateY(-50%);
+  background-color: var(--color-white);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-footer);
+  z-index: -1;
+}
+.footer__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__links {
+  margin-top: 0.312rem;
+}
+
+.fheader {
+  line-height: var(--line-height-45);
+}
+
+.copyrights {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.copyrights__socials {
+  display: flex;
+  gap: 2rem;
+}
+.copyrights__text {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-30);
+  color: var(--color-text-copy);
+}
+.copyrights__text .cSpan {
+  font-weight: var(--font-weight-500);
+}
+
+.footer__links {
+  display: flex;
+  gap: 12.6rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.links__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flink {
+  line-height: var(--line-height-30);
 }/*# sourceMappingURL=style.css.map */
