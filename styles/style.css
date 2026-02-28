@@ -57,6 +57,11 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+@media (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+}
 
 body {
   display: flex;
@@ -162,9 +167,13 @@ meter {
 
 .container {
   position: relative;
-  width: var(--max-width);
+  max-width: var(--max-width);
   padding-top: 5rem;
-  z-index: 0;
+}
+@media (max-width: 900px) and (min-width: 600px) {
+  .container {
+    --max-width: 80rem;
+  }
 }
 
 .item__link {

@@ -21,6 +21,10 @@ html {
   scroll-padding-top: 12rem;
   scroll-behavior: smooth;
   overflow-x: hidden;
+
+  @media (max-width: 900px) {
+    font-size: 8px;
+  }
 }
 
 body {
