@@ -8,12 +8,12 @@
 
   &__subscribe {
     position: absolute;
-    top: 0;
+    top: -11.5rem;
     left: 50%;
     width: 100%;
     padding: 5.85rem 7rem;
     border-radius: var(--border-radius-10);
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%);
     background-color: var(--color-white);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
