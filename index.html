@@ -19,29 +19,31 @@
           <img src="/assets/Logo.svg" alt="logo image" />
         </div>
 
-        <nav class="header__navigation-links" aria-label="navigation links">
-          <ul class="navigation__links-list">
-            <li class="item__link">
-              <a href="#about" class="link">About</a>
-            </li>
-            <li class="item__link">
-              <a href="#features" class="link">Features</a>
-            </li>
-            <li class="item__link">
-              <a href="#pricing" class="link">Pricing</a>
-            </li>
-            <li class="item__link">
-              <a href="#testimonials" class="link">Testimonials</a>
-            </li>
-            <li class="item__link">
-              <a href="#help" class="link">Help</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="link-wrapper">
+          <nav class="header__navigation-links" aria-label="navigation links">
+            <ul class="navigation__links-list">
+              <li class="item__link">
+                <a href="#about" class="link">About</a>
+              </li>
+              <li class="item__link">
+                <a href="#features" class="link">Features</a>
+              </li>
+              <li class="item__link">
+                <a href="#pricing" class="link">Pricing</a>
+              </li>
+              <li class="item__link">
+                <a href="#testimonials" class="link">Testimonials</a>
+              </li>
+              <li class="item__link">
+                <a href="#help" class="link">Help</a>
+              </li>
+            </ul>
+          </nav>
 
-        <div class="header__cta" aria-label="call to action buttons">
-          <button class="header__button btn--plain">Sign In</button>
-          <button class="header__button btn--secondary">Sign Up</button>
+          <div class="header__cta" aria-label="call to action buttons">
+            <button class="header__button btn--plain">Sign In</button>
+            <button class="header__button btn--secondary">Sign Up</button>
+          </div>
         </div>
 
         <label class="burger-menu" for="menu">
@@ -67,7 +69,11 @@
             <button class="button">Get Started</button>
           </section>
           <section class="about-us__heroPic">
-            <img src="/assets/Illustration 1.svg" alt="hero pic image" />
+            <img
+              class="heroPic"
+              src="/assets/Illustration 1.svg"
+              alt="hero pic image"
+            />
           </section>
         </div>
         <div class="about-us__lower">
@@ -143,7 +149,7 @@
 
       <section class="features section" id="features">
         <section class="features__pic">
-          <img src="/assets/Illustration 2.svg" alt="" />
+          <img class="featuresPic" src="/assets/Illustration 2.svg" alt="" />
         </section>
         <section class="features__details">
           <h2 class="h2--header">We Provide Many Features You Can Use</h2>

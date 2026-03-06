@@ -17,6 +17,11 @@
 .pricing__offers {
   display: flex;
   gap: 5rem;
+
+  @include mobile-tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .offer {

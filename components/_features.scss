@@ -16,6 +16,12 @@
   }
 }
 
+.featuresPic {
+  @include mobile-tablet {
+    height: 100%;
+  }
+}
+
 .details__list {
   display: flex;
   flex-direction: column;

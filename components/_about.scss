@@ -1,3 +1,5 @@
+@import "mixins.scss";
+
 .about-us {
   margin-top: 8.849rem;
   display: flex;
@@ -20,6 +22,12 @@
   margin-bottom: 5rem;
 }
 
+.heroPic {
+  @include tablet {
+    height: 100%;
+  }
+}
+
 .numbers {
   position: relative;
   margin-top: 10.3rem;
@@ -39,6 +47,10 @@
       padding: 3.029rem 13.45rem 3.029rem 11.3rem;
       border-left: var(--border-2) solid var(--border-color);
       border-right: var(--border-2) solid var(--border-color);
+
+      @include mobile-tablet {
+        border: none;
+      }
     }
   }
 }
