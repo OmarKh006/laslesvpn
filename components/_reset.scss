@@ -1,3 +1,5 @@
+@import "./mixins";
+
 *:where(
   :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
 ) {
@@ -22,7 +24,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 
-  @media (max-width: 900px) {
+  @include mobile-tablet {
     font-size: 8px;
   }
 }

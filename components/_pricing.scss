@@ -91,9 +91,11 @@
   );
   transition: var(--transition-timing);
 
-  &:hover {
-    background-color: var(--color-primary);
-    color: var(--color-white);
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+    }
   }
 }
 
@@ -112,8 +114,10 @@
   );
   transition: var(--transition-timing);
 
-  &:hover {
-    opacity: 0.8;
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &::before {

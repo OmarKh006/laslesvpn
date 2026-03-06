@@ -10,11 +10,27 @@
     display: flex;
     justify-content: space-between;
     gap: 4.076rem;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+}
+
+.about-us__heroPic {
+  @include mobile {
+    order: -1;
+    width: 100%;
   }
 }
 
 .about-us__description {
   width: 55.5rem;
+
+  @include mobile {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .description__text {
@@ -28,8 +44,13 @@
   }
 }
 
+.heroBtn {
+  @include mobile {
+    width: 100%;
+  }
+}
+
 .numbers {
-  position: relative;
   margin-top: 10.3rem;
   display: flex;
   align-items: center;
@@ -37,6 +58,11 @@
   padding: 3.721rem 9.1rem;
   border-radius: var(--border-radius-10);
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  @include mobile {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 
   &__number {
     display: flex;
@@ -50,6 +76,10 @@
 
       @include mobile-tablet {
         border: none;
+      }
+
+      @include mobile {
+        padding: 0;
       }
     }
   }

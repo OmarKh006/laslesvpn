@@ -13,6 +13,14 @@
   &__details {
     align-self: flex-end;
     @include list($gap: 2rem);
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
   }
 }
 
